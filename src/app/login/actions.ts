@@ -13,7 +13,7 @@ export async function login(formData: FormData) {
         cookieStore.set('site-access', 'true', {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict',
+            sameSite: 'lax', // Relaxed for better redirect compatibility
             maxAge: 60 * 60 * 24,
             path: '/',
         })
