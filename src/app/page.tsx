@@ -336,6 +336,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="section-lg px-8 relative">
+        <div className="max-w-[var(--container-max)] mx-auto relative z-10">
+
+          {/* Section header */}
+          <FadeIn className="section-header text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-heading text-emphasis mb-4">Frequently Asked Questions</h2>
+            <p className="text-subhead">
+              Common questions about starting therapy and working together.
+            </p>
+          </FadeIn>
+
+          {/* FAQ Items */}
+          <FadeInStagger className="grid gap-6 max-w-3xl mx-auto">
+            {[
+              {
+                question: "What is a free consultation like?",
+                answer: "The free consultation is a brief 15-20 minute phone or video call where we can get to know each other. I'll ask about what brings you to therapy, answer any questions you have about my approach, and we'll see if we feel like a good fit. There's no pressure — it's simply a chance to connect before committing to sessions."
+              },
+              {
+                question: "How long are sessions?",
+                answer: "Individual therapy sessions are 50 minutes, which is the standard therapeutic hour. This gives us enough time to dive into meaningful work while also allowing space to process and close each session thoughtfully. For some clients, extended 80-minute sessions are available if needed."
+              },
+              {
+                question: "What should I expect in the first session?",
+                answer: "The first session is about building our foundation. I'll ask more detailed questions about your history, current challenges, and goals for therapy. You'll have the chance to share what feels most pressing, and together we'll start to map out a direction. It's normal to feel a mix of relief and nervousness — that's completely okay."
+              },
+              {
+                question: "What's the difference between in-person and telehealth?",
+                answer: "In-person sessions take place at my Santa Monica office, which many clients find grounding and helpful for feeling fully present. Telehealth sessions happen via a secure, HIPAA-compliant video platform and offer flexibility for those with busy schedules or who prefer therapy from home. Both options are equally effective — it's about what works best for you."
+              },
+            ].map((faq, i) => (
+              <FadeInItem
+                key={i}
+                className="bg-white/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-sm border border-white/50"
+              >
+                <h3 className="text-lg sm:text-xl font-serif font-medium text-[var(--color-text)] mb-3">
+                  {faq.question}
+                </h3>
+                <p className="text-body text-[var(--color-text-muted)] leading-relaxed">
+                  {faq.answer}
+                </p>
+              </FadeInItem>
+            ))}
+          </FadeInStagger>
+
+          {/* CTA after FAQ */}
+          <FadeIn className="text-center mt-12" delay={0.3}>
+            <p className="text-body text-[var(--color-text-muted)] mb-4">
+              Have more questions?
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 text-[var(--color-accent)] font-medium hover:underline underline-offset-4"
+            >
+              Get in touch →
+            </a>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="section-lg bg-transparent px-8 text-center relative overflow-hidden">
         {/* Dark Glass Card for Contrast */}
