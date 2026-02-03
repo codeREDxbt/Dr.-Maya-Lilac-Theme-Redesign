@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dr. Maya Reynolds — Therapy Website Redesign 🌿
 
-## Getting Started
+![Project Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=flat-square&logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=flat-square&logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
 
-First, run the development server:
+A modern, editorial-style website redesign for a clinical psychologist, focusing on **empathy, calmness, and visual storytelling**. This project creates a premium user experience using glassmorphism, subtle animations, and refined typography.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
+
+## ✨ Key Features
+
+- **🎨 Editorial Design**: Asymmetric grids (55/45 split) and generous negative space for a high-end feel.
+- **☁️ Glassmorphism UI**: Deep green and frosted glass cards (`backdrop-blur-xl`) for depth and contrast.
+- **📱 Mobile Optimized**: Fully responsive layout with `100dvh` hero sections and touch-friendly navigation.
+- **🎥 Dynamic Backgrounds**: Subtle video backgrounds integrated with content overlays.
+- **✨ Smooth Animations**: Staggered fade-ins and scroll reveals powered by **Framer Motion**.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4.0](https://tailwindcss.com/)
+- **Language**: TypeScript
+- **Icons**: Tabler Icons & Lucide React
+- **Animations**: Framer Motion
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/codeREDxbt/Dr.-Maya-Lilac-Theme-Redesign.git
+   cd Dr.-Maya-Lilac-Theme-Redesign
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+src/
+├── app/              # Next.js App Router pages (layout.tsx, page.tsx)
+├── components/       # Reusable UI components
+│   ├── ui/           # Low-level accessible components
+│   ├── fade-in.tsx   # Animation wrappers
+│   └── site-navbar.tsx
+└── lib/              # Utilities and helpers
+```
 
-## Learn More
+## 📸 visual showcase
 
-To learn more about Next.js, take a look at the following resources:
+_Hero Section with Glassmorphism_
+> "Find relief from anxiety, trauma & burnout."
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+_Interactive Mobile Menu_
+> Reduced padding and optimized spacing for mobile devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 👨‍💻 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Designed & Developed by Vinayak (codeRED)**  
+*Internship Project · 2026*
