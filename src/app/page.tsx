@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { SiteNavbar } from "@/components/site-navbar";
 import { FadeIn, FadeInStagger, FadeInItem } from "@/components/fade-in";
+import { FAQAccordion } from "@/components/faq-accordion";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 /*
   Dr. Maya Reynolds — Modern Editorial Homepage
@@ -348,9 +350,9 @@ export default function Home() {
             </p>
           </FadeIn>
 
-          {/* FAQ Items */}
-          <FadeInStagger className="grid gap-6 max-w-3xl mx-auto">
-            {[
+          {/* FAQ Accordion */}
+          <FAQAccordion
+            items={[
               {
                 question: "What is a free consultation like?",
                 answer: "The free consultation is a brief 15-20 minute phone or video call where we can get to know each other. I'll ask about what brings you to therapy, answer any questions you have about my approach, and we'll see if we feel like a good fit. There's no pressure — it's simply a chance to connect before committing to sessions."
@@ -367,20 +369,8 @@ export default function Home() {
                 question: "What's the difference between in-person and telehealth?",
                 answer: "In-person sessions take place at my Santa Monica office, which many clients find grounding and helpful for feeling fully present. Telehealth sessions happen via a secure, HIPAA-compliant video platform and offer flexibility for those with busy schedules or who prefer therapy from home. Both options are equally effective — it's about what works best for you."
               },
-            ].map((faq, i) => (
-              <FadeInItem
-                key={i}
-                className="bg-white/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-sm border border-white/50"
-              >
-                <h3 className="text-lg sm:text-xl font-serif font-medium text-[var(--color-text)] mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-body text-[var(--color-text-muted)] leading-relaxed">
-                  {faq.answer}
-                </p>
-              </FadeInItem>
-            ))}
-          </FadeInStagger>
+            ]}
+          />
 
           {/* CTA after FAQ */}
           <FadeIn className="text-center mt-12" delay={0.3}>
@@ -453,6 +443,9 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </main>
   );
 }
